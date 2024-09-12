@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Beginning Web Design</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&display=swap" rel="stylesheet">
+
+<style>
+* {
+   box-sizing: border-box;
+}
+
+html {
+  width:100vw;
+  height: 100vw;
+}
+
+a:link { 
+  text-decoration: none; 
+} 
+
+a:visited { 
+  text-decoration: none; 
+} 
+
+a:hover { 
+  text-decoration: none; 
+} 
+
+a:active { 
+  text-decoration: none; 
+}
+
+body {
+  width: 1280px;
+  height: 100vh;
+  margin: auto;
+  font-family: Montserrat, Verdana, Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+}
+
+.navigation {
+	float: left;
+  margin-top: 10px;
+  margin-left: 70%;
+	text-align: center; 
+  padding-bottom: 7px; 
+}
+
+.navigation a {
+  border-radius: 6px;
+	padding: 7px;
+  padding-left: 16px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+}
+
+.header {
+  border: 1px solid rgb(105, 195, 231);
+  border-radius: 6px;
+  padding: 15px; 
+  text-align: center;
+  background-color: rgb(105, 195, 231);
+  font-size: xx-large;
+  font-family: "Nerko One", Verdana, Arial, Helvetica, sans-serif;
+}
+
+.resources {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.resources h2 {
+  color:whitesmoke;
+  background-color:rgb(105, 195, 231);
+  border-radius:6px;
+}
+    
+.resources a {
+  background-color: white;
+  padding: 8px;
+  padding-top: 8px;
+  margin-top: 2px;
+  border: 2px solid rgb(105, 195, 231);
+  border-radius: 6px;
+  display: block;
+  width: 100%;
+}
+    
+.main {
+  color: rgb(80, 76, 76);
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+    
+.right {
+  background-color: rgb(105, 195, 231);
+  float: left;
+  width: 20%;
+  height: 320px;
+  border-radius: 6px;
+  padding: 15px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid lightgray;
+}
+
+th {
+  width: 25%;
+  border: 1px solid lightgray;
+  padding: 4px;
+}
+
+td {
+  border: 1px solid lightgray;
+  padding: 4px;
+}
+    
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+      }
+}
+</style>
+</head>
+
+<body>
+
+  <div class="navigation">
+    <strong><a href="#">Home</a></strong>
+  	<strong><a href="#HTML">HTML</a></strong>
+  	<strong><a href="#CSS">CSS</a></strong>
+  	<strong><a href="#Contact">Contact Us</a></strong>
+  </div>
+  
+  <div class="header">
+	  <h1 style="color:whitesmoke;">Beginning Web Design</h1>
+  </div>
+  
+  <div style="overflow:auto">
+    <div class="resources">
+      <h2>Explore Other Resources!</h2>
+      <a href="https://stackskills.com/"><img src="images/stackskills-logo-blue.png" alt="Stackskills logo" style="width:100px;height:25px;"></a>
+      <a href="https://www.freecodecamp.org/"><img src="images/free-code-camp.png" alt="freeCodeCamp logo" style="width:115px;height:15px;"></a>
+      <a href="https://www.w3schools.com/"><img src="images/W3-Schools-logo.jfif" alt="W3 Schools logo" style="width:115px;height:50pxpx;"></a></a>
+      <a href="https://css-tricks.com/"><img src="images/CSS-Tricks-logo.png" alt="CSS-Trick-logo" style="width: 115px;height:35px;"></a>
+  </div>
+
+  <div class="main">
+    <article>
+      <section>
+      <h2>Welcome to Beginning Web Design!</h2>
+        <p>Ever wanted to learn how to code and build websites for yourself or others? 
+          This site will introduce you to the basics of how the web works, and how it 
+          interprets the code developers use to display intriguing and dynamic websites.</p>
+      </section>
+
+      <section>
+        <h3>How the Web Works</h3>
+          <p>In its most basic form, when you enter a web address into your browser 
+            (e.g. https://www.beginningwebdesign.com), an IP address associated with that 
+            website will serve up the "content" of the site back to your browser. At a 
+            minimum, this content is in the form of <strong>Hypertext Markup Language (HTML)</strong> 
+            <em>and</em> <strong> Cascading Style Sheets (CSS).</strong></p>
+      </section>
+
+      <section id="HTML">
+        <h3>What is HTML?</h3>
+
+        <ul>
+          <li>HTML stands for Hyper Text Markup Language.</li>
+          <li>HTML is the standard markup language for creating Web pages.</li>
+          <li>HTML describes the <strong>structure</strong> of a Web page.</li>
+        </ul> 
+
+          <p>HTML consists of a series of elements that encapsulate text data within "tags". HTML 
+            elements tell the browser how to display the content on the Web page. HTML elements 
+            label pieces of content such as "this is a heading", "this is a paragraph", "this 
+            is a link", etc.</p>
+
+        <h4>General HTML Document</h4>
+
+            <p>Here is a basic example of HTML code:</p>
+            <img src="images/html-example.png" alt="html-example.png">
+
+            <p>And here is the output of the code in your browser:</p>
+              <pre>
+                <h1>This is my First Heading</h1>
+                <p>This is my first paragraph.</p>
+              </pre>  
+      </section>
+
+      <section id="CSS">
+        <h3>What is CSS?</h3>
+
+          <p>CSS is used to define styles for your web pages, including the design, layout and 
+            variations in display for different devices and screen sizes. CSS saves a lot of work and 
+            can control the layout of multiple web pages all at once.</p>
+
+          <p>HTML was NEVER intended to contain tags for formatting a web page!
+            HTML was created to describe the content of a web page. To solve this problem, the World 
+            Wide Web Consortium (W3C) created CSS.</p>
+
+          <p>When writing CSS, developers typically save their style
+            definitions in an external .css file. With an external stylesheet file, you can change the 
+            look of an entire website by changing just one file!</p>
+
+        <h4>HTML Document with CSS styling</h4>
+
+          <p>Here is an example of CSS styling applied internally to an HTML document:</p>
+          <img src="images/css-example.png" alt="css-example.png">
+
+          <p>And here is the output of the code in your browser:</p>
+          <img src="images/css-example2.png" alt="css-example2.png">
+      </section>
+
+      <section id="Contact">
+        <h3>Contact Us</h3>
+        <table>
+          <tr style="text-align: left">
+            <th>Contact Name</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td>555-555-0123</td>
+            <td>johndoe@beginningwebdesign.com</td>
+          </tr>
+          <tr>
+            <td>Jane Doe</td>
+            <td>555-555-4567</td>
+            <td>janedoe@beginningwebdesign.com</td>
+          </tr>
+        </table>
+      </section>
+
+    </article>
+
+  </div>
+
+  <div class="right">
+    <h2 style="color: whitesmoke">Stay Informed!</h2>
+    <p style="text-align:left;color:whitesmoke">Sign up to our Mailing List!</p>
+    <dl>
+      <dt style="padding-bottom:10px;">
+        <label for="firstlast">Name:</label>
+        <input type="text" name="fullname" id="firstlast">
+      </dt>
+      <dt>
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email">
+      </dt>
+    </dl>
+    <input type="submit" value="Submit">
+  </div>
+</div>
+
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">
+  <footer>
+    <h5>Created by Jonah Pickens &copy; 2024</h5>
+  </footer>
+</div>
+</body>
+</html>
