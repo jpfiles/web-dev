@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selectors Assignment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&display=swap" rel="stylesheet">
+<style>
+/* CSS styles will be placed here */
+body {
+  width: 1280px;
+  height: 100vh;
+  margin: auto;
+  font-family: Montserrat, Verdana, Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+}
+#intro h2{
+    color: rgb(21, 207, 83);
+}
+
+#main strong {
+    color: rgb(236, 133, 16);
+}
+
+.special {
+    color: rgb(235, 10, 216);
+}
+
+body *:not(.special) {
+    color: rgb(21, 207, 83);
+}
+
+</style>   
+</head>
+<body>
+    <h1>Page Title</h1>
+    <div id="main">
+        <p class="special">This is a special paragraph in the main section.</p>
+        <img src="example.jpg" alt="Example">
+        <strong>Important text in main</strong>
+        <ul>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+        </ul>
+    </div>
+    <div id="intro">
+        <h2>Introduction Header</h2>
+        <p>Some introductory text here.</p>
+        <h2>Another Header</h2>
+        <p class="special">Another special paragraph in intro.</p>
+    </div>
+    <p>Just a normal paragraph.</p>
+</body>
+</html>

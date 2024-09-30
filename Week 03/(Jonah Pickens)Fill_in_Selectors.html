@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> CSS Selectors </title>
+<style>
+/* 1) * - Selects all elements */
+* {
+font-size: large;
+padding: 3px;
+}
+/* 2) div - Selects all div elements */
+div {
+border:2px solid rgb(0, 102, 0);
+}
+/* 3) .divK p - Selects all <p> elements within the <div> element with the class divK */
+.divK p {
+color: red;
+font-weight: bold;
+}
+/* 4) .divK > p - Selects all <p> elements where the parent has the class divK */
+.divK > p {
+background-color: lightgray;
+}
+/* 5) .divK > p - Selects the first <p> element where the parent has the class divK */
+.divK + p {
+font-family: 'Times New Roman';
+font-size: larger;
+font-weight: bold;
+}
+/* 6) .divK ~ p - Selects every <p> element that is preceded by an element that has the class divK */
+.divK ~ p {
+border:1px solid red;
+}
+/* 7) .divK - Selects the <div> element that has the class divK
+      .divGC - Selects the <div> element that has the class divGC */
+.divK {
+margin-left: 50px;
+}
+.divGC {
+margin-left: 100px;
+}
+</style>
+</head>
+<body>
+        <div >
+        <p>P1 </p>
+        <p>P2 </p>
+        <div class="divK">
+            <p>C1 </p>
+            <p>C2 </p>
+            <p>C3 </p>
+            <div class="divGC" >
+                <p>G1 </p>
+                <p>G2</p>
+            </div>
+            <p>C4 </p>
+        </div>
+        <p>P3</p>
+        <p>P4</p>
+        <p>P5</p>
+    </div>
+</body>
+</html>
